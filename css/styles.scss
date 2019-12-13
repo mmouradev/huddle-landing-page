@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,600&display=swap");
+
+$poppins: "Poppins";
+$open: "Open Sans";
+
+$violet: hsl(257, 40%, 49%);
+
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  background: $violet url(../images/bg-desktop.svg) no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  font-family: $open;
+  color: #fff;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 4% 5%;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.row {
+  display: flex;
+}
+
+.mockup {
+  flex: 0.6;
+  .mockup__image {
+    width: 100%;
+  }
+}
+
+.product {
+  flex: 0.4;
+  padding: 50px 80px;
+
+  .product__title {
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.4;
+    color: #fff;
+  }
+  .product__text {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 20px;
+  }
+}
+.btn {
+  border: none;
+  border-radius: 30px;
+  padding: 20px 80px;
+  margin-top: 20px;
+}
+
+.btn-register {
+  background: #fff;
+  font-size: 20px;
+  color: $violet;
+  box-shadow: 1px 3px 5px 2px rgba($color: #000000, $alpha: 0.2);
+}
+
+.media {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    font-size: 22px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px 15px;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #c9c9c9;
+}
