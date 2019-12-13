@@ -132,6 +132,15 @@ main {
     }
   }
 }
+.sr-only {
+  display: none;
+}
+
+@media speech {
+  .sr-only {
+    display: block;
+  }
+}
 
 .attribution {
   font-size: 11px;
